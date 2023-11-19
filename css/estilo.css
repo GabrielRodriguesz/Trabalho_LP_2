@@ -1,0 +1,94 @@
+
+/* Fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap');
+
+/* Estilização do Body */
+body {
+    background-image: url(../imagens/fundo.png);
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Formatação para o formulário*/
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #333;
+
+}
+
+fieldset{
+    border: solid 2px black;
+    border-radius: 8px;
+    width: 88%;
+}
+
+form {
+    width: 50%;
+    margin: 100px auto;
+    padding: 24px;
+    background-color: #739072;
+    color: black;
+    border-radius: 16px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Formatação do botão e os inputs */
+.botao {
+    background-color: #3A4D39;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+    /*tamanho mínimo*/
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+
+button:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+
+input[type=text], [type=number], select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Estilização para a responsividade do site */
+@media only screen and (max-width: 850px){
+    body{
+        font-size: 12px;
+    }
+    form{
+        width: 70%;
+        margin: auto, auto;
+    }
+}
+
